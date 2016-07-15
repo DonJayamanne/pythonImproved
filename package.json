@@ -1,0 +1,65 @@
+{
+    "name": "pythonimproved",
+    "displayName": "Python Improved",
+    "description": "Syntax highlighting for Python using PythonImproved (https://github.com/MattDMo/PythonImproved)",
+    "version": "0.0.1",
+    "publisher": "donjayamanne",
+    "author": {
+        "name": "Don Jayamanne",
+        "email": "don.jayamanne@yahoo.com"
+    },
+    "license": "MIT",
+    "homepage": "http://donjayamanne.github.io/pythonImproved/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DonJayamanne/pythonImproved"
+    },
+    "bugs": {
+        "url": "https://github.com/DonJayamanne/pythonImproved/issues"
+    },
+    "icon": "images/icon.svg",
+    "galleryBanner": {
+        "color": "#1e415e",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "extensionDependencies": [
+        "vscode.python"
+    ],
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "python",
+                "extensions": [
+                    ".py",
+                    ".py3",
+                    ".rpy",
+                    ".pyw",
+                    ".cpy",
+                    ".gyp",
+                    ".gypi",
+                    ".SConstruct",
+                    ".Sconstruct",
+                    ".sconstruct",
+                    ".SConscript"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "python",
+                "scopeName": "source.python",
+                "path": "./syntaxes/python.tmLanguage"
+            },
+            {
+                "scopeName": "source.regexp.python",
+                "path": "./syntaxes/Regular Expressions (Python).tmLanguage"
+            }
+        ]
+    }
+}
